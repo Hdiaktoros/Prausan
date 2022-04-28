@@ -1,2 +1,1 @@
-# MyNotes
- 
+# Prausan Fingerprint Notes app
