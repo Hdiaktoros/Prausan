@@ -35,7 +35,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="121dp"
-            android:text="Change password" />
+            android:text="@string/change_password" />
 
         <ImageView
             android:id="@+id/imageView2"
@@ -49,7 +49,8 @@
             android:layout_marginTop="72dp"
             android:layout_marginEnd="0dp"
             android:layout_marginBottom="259dp"
-            app:srcCompat="@drawable/logo" />
+            app:srcCompat="@drawable/logo"
+            android:contentDescription="@string/logo" />
 
         <ImageView
             android:id="@+id/imageView4"
@@ -64,7 +65,8 @@
             android:layout_marginEnd="0dp"
             android:layout_marginBottom="613dp"
             android:alpha="0.8"
-            app:srcCompat="@drawable/welcome__user_" />
+            app:srcCompat="@drawable/welcome__user_"
+            android:contentDescription="@string/welcome_user" />
 
         <ImageView
             android:id="@+id/btNotes"
@@ -80,11 +82,10 @@
             android:layout_marginEnd="110dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="34dp"
-            android:alpha="0.8"
+            android:background="#FAFAFA"
             android:backgroundTint="#FFFFFF"
-            android:foregroundTint="#D29148"
-            android:scaleType="center"
-            app:srcCompat="@drawable/goto_notes" />
+            app:srcCompat="@drawable/goto_notes"
+            android:contentDescription="@string/goto_notes" />
 
         <ImageView
             android:id="@+id/imageView6"
@@ -98,7 +99,8 @@
             android:layout_marginTop="419dp"
             android:layout_marginEnd="0dp"
             android:layout_marginBottom="192dp"
-            app:srcCompat="@drawable/prausan_welcome_text" />
+            app:srcCompat="@drawable/prausan_welcome_text"
+            android:contentDescription="@string/prausan_fingerprint_notes" />
 
     </RelativeLayout>
 

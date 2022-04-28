@@ -3,5 +3,10 @@
     <string name="delete">Delete</string>
     <string name="title">Title</string>
     <string name="note">Note</string>
+    <string name="prausan_fingerprint_notes">prausan fingerprint notes</string>
+    <string name="goto_notes">goto notes</string>
+    <string name="welcome_user">welcome user</string>
+    <string name="logo">logo</string>
+    <string name="change_password">Change password</string>
     <!-- TODO: Remove or change this placeholder text -->
 </resources>
