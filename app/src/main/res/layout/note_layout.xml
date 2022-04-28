@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:layout_margin="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#A77956"
+            android:padding="8dp">
+            <TextView
+                android:id="@+id/text_view_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_view_note"
+                android:layout_marginBottom="10dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#FFFFFF"
+                tools:text="My First Note" />
+            <TextView
+                android:id="@+id/text_view_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="#FFFFFF"
+                tools:text="Note Description" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
