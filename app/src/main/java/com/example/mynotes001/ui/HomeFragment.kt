@@ -1,10 +1,13 @@
 package com.example.mynotes001.ui
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.view.*
 import androidx.navigation.Navigation
+import kotlin.system.exitProcess
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
+import androidx.appcompat.app.AppCompatActivity
 import com.example.mynotes001.R
 import com.example.mynotes001.db.Note
 import com.example.mynotes001.db.NoteDatabase
@@ -15,6 +18,7 @@ import java.security.KeyStore
 import javax.crypto.Cipher
 import javax.crypto.SecretKey
 import javax.crypto.spec.IvParameterSpec
+
 
 
 class HomeFragment : BaseFragment() {
@@ -42,5 +46,8 @@ class HomeFragment : BaseFragment() {
             val action = HomeFragmentDirections.actionAddNote()
             Navigation.findNavController(it).navigate(action)
         }
+    }
+    fun onBackPressed() {
+               exitProcess(0)
     }
 }

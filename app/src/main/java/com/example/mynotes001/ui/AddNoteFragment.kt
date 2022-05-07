@@ -112,14 +112,14 @@ class AddNoteFragment : BaseFragment() {
         super.onCreateOptionsMenu(menu, inflater)
         inflater.inflate(R.menu.menu, menu)
     }
-    fun getKey(): SecretKey {
+    private fun getKey(): SecretKey {
         val keystore = KeyStore.getInstance("AndroidKeyStore")
         keystore.load(null)
 
         val secretKeyEntry = keystore.getEntry("MyKeyAlias", null) as KeyStore.SecretKeyEntry
         return secretKeyEntry.secretKey
     }
-    fun encryptData(data: String): Pair<ByteArray, ByteArray> {
+    private fun encryptData(data: String): Pair<ByteArray, ByteArray> {
         val cipher = Cipher.getInstance("AES/CBC/NoPadding")
 
         var temp = data
@@ -132,7 +132,7 @@ class AddNoteFragment : BaseFragment() {
 
         return Pair(ivBytes, encryptedBytes)
     }
-    fun decryptData(ivBytes: ByteArray, data: ByteArray): String{
+    private fun decryptData(ivBytes: ByteArray, data: ByteArray): String{
         val cipher = Cipher.getInstance("AES/CBC/NoPadding")
         val spec = IvParameterSpec(ivBytes)
         cipher.init(Cipher.DECRYPT_MODE, getKey(), spec)
